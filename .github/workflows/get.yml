@@ -1,0 +1,17 @@
+name: Get Store Builds
+
+on: workflow_dispatch
+
+jobs:
+  gsb:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run script
+        run: bash script.sh
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: builds
+          path: |
+            scratchaddons-v*.crx
+            scratchaddons-v*.xpi
