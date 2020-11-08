@@ -6,6 +6,8 @@ jobs:
   gsb:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Run script
         run: bash script.sh
       - name: Upload artifact
