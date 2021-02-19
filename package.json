@@ -1,0 +1,23 @@
+{
+  "name": "scratchaddons-get-store-builds",
+  "version": "1.0.0",
+  "description": "Get store builds/releases of Scratch Addons (GSB = Get Store Builds)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScratchAddons/get-store-builds.git"
+  },
+  "author": "Hans5958",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ScratchAddons/get-store-builds/issues"
+  },
+  "homepage": "https://github.com/ScratchAddons/get-store-builds#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "fs-extra": "^9.1.0"
+  }
+}
